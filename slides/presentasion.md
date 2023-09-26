@@ -3,8 +3,9 @@ title: Penggunaan DOM Javascript
 author: Zainal Abidin
 marp: true
 paginate: true
-theme: default
-transition: fade
+keywords: dom, javascript
+theme: uncover
+transition: fade 1s
 ---
 
 # Your slide deck
