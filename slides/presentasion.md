@@ -1,31 +1,45 @@
 ---
-title: Penggunaan DOM Javascript
+title: Unlocking DOM Manipulation
 author: Zainal Abidin
 marp: true
 paginate: true
 keywords: dom, javascript
 theme: uncover
 transition: fade 1s
+footer: 21 Oct 2023 | @zaiinhs | DOM JavaScript
 ---
 
-# Your slide deck
+# Unlocking DOM Manipulation
 
-![gambar](https://media.tenor.com/MCnMLxHDdGgAAAAd/sideeye.gif)
+A-Hands-On JavaScript Workshop
 
----
-
-## Start writing!
-
-pelajari https://marp.app/
+by @zaiinhs.
 
 ---
 
-# Ini slide 3
+# ini slide 
+
+```js
+nextButton.addEventListener("click", () => {
+  showImage(currentIndex + 1);
+});
+```
 
 ---
 
-# ini slide 4
+# slide table
+
+| Header | Header | Haader |
+| ------ | ------ | ------ |
+| Text   | Text   | Text   |
 
 ---
+# Gifs
+---
+# Jancok
 
-# slide 5
+---
+# Any Questions? 
+
+---
+## Thank You😊
