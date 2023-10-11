@@ -1,0 +1,113 @@
+Document Object Model Javascript adalah representasi element html pada document menjadi sebuah object
+
+index.html itu akan di representasikan atau di model kan sebagai object kedalam browser nya. cara cek nya ketik document di console, maka akan ada tampilan dari html tersebut
+
+Pohon Hierarki DOM atau DOM Tree	
+ketika membangun web, representasi nya akan seperti ini, gambar dom tree.
+
+tiap kotak didalam tree, disebut simpul atau node, yg bentuk sama object juga
+
+semua node itu ada di dalam node document
+document, mengelola apapun yg ada didalam website
+
+diatas node document, terdapat lagi window. yg sejajar ada document, history, location
+
+dom adalah antarmuka pemrograman, karena kita bisa menghubungkan antara javascript dengan element html 
+sehingga element di dalam document tadi bisa kita akses dan dimanipulasi.
+
+komponen yg bisa di manipulasi, 
+element html, atribut, text, 
+
+digunakan untuk berinteraksi dengan halaman web
+
+DOM
+selection
+manipulation
+traversal
+event handling
+
+Pre-requisite :
+- html
+- css
+- javascript
+
+Aplikasi pendukung
+code editor
+web browser
+
+
+DOM TREE
+adalah representasi element2 html di dalam browser. 
+node paling atas di sebut root atau document, 
+
+tipe-tipe node :
+elemen, attribute, text, CData section, Entity Reference, Entity, Processing Instruction, comment, document, document type, document, fragment, notation
+
+NodeList vs HTMLCollection
+jika memilih banyak element dan text atau banyak node, bisa disebut nodelist
+
+memilih beberapa element saja, disebut HTML Collection
+
+jadi nodelist dapat berisi node apapun, sedangkan htmlcollection harus berisi elemen html
+htmlcollection bersifat live, nodelist tidak
+
+structure hierarki dom tree
+konsep nya mirip seperti silsilah keluarga, ada parent dan child child
+- Root Node
+Node yg menjadi sumber dari semua node didalam DOM. yaitu document
+- Parent Node
+node yg berada 1 tingkat diatas node yg lain. yaitu body
+- Child Node
+node yg berada 1 tingkat dibawah node yg lain. yaitu h1, p, div, 
+
+Dom selection
+getElementById() ,
+getElementsByTagName(),
+getElementsByClassName()
+querySelector()
+querySelectorAll()
+
+DOM Manipulation
+manipulasi element, manipulasi node
+
+element.innerHTML
+element.style.property
+element.getAttribute()
+element.setAttribute()
+element.removeAttribute()
+element.classList
+element.textContent
+document.createElement()
+document.createTextNode()
+node.appendChield()
+node.append()
+
+DOM Events
+adalah sebuah kejadian yg terjadi didalam DOM, kejadian tersebut bisa dilakukan oleh user(Mouse event, keyboard event, dll)
+jadi komputer akan mendengarkan apakah ada sebuah kegiatan yg dilakukan oleh user
+- Event Handler (inline html attribute, element methhod)
+ cara memanggi event handler dengan menambahkan kata on dan di ikuti event nya apa . misal onClick, onChange, dll.
+ 
+
+- addEventListener()
+ini adalah cara terbaru dari manipulasi dom event, 
+
+element.addEventListener('click', function(){
+	element.style.color = "red"
+})
+
+kalau event ini dipanggil 2 kali, maka akan dijalankan semua perintah nya. tetapi kalau menggunakan event handler, akan menimpa fungsi pertama nya dan akan dijalankan fungsi terakhir.
+ 
+cari event event, 
+
+
+DOM Traversal
+melakukan penelusuran di dalam suatu element
+ada parentElement, parentNode, tapi kalau pake parentNode itu akan menghitung setiap spasi nya juga. prefer pakai parentElement
+
+Prevent Default
+sebuah method yg mencegah aksi default nya, yaitu reload.
+
+Event Bubbling
+ketika kita memberikan event di element children dan di element parent juga ada event, maka itu akan dijalankan semua ketika di klik dari parent terbesar dulu.
+jika ingin memberikan handle stop karena kejadian itu, bisa menggunakan event.stopPropagation()
