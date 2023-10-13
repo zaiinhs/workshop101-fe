@@ -6,6 +6,6 @@
 Update :
 - [x] create poster 
 - [x] date and time
-- [ ] workshop materials ![](https://geps.dev/progress/60)
+- [ ] workshop materials ![](https://geps.dev/progress/90)
 
 <img src="assets/workshop-1.png"/>
