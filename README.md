@@ -8,6 +8,7 @@ Update :
 
 - [x] create poster
 - [x] date and time
-- [x] workshop materials ![](https://geps.dev/progress/100)
+- [x] workshop materials
+      ![](https://geps.dev/progress/100)
 
 <img src="assets/feed1.png"/>
