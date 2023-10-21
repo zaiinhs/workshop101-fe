@@ -3,6 +3,11 @@ const galleryContainer = document.querySelector(".gallery-container");
 const galleryImages = document.querySelectorAll(".gallery-image");
 const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
+const header = document.querySelector(".header");
+
+header.style.backgroundColor = 'yellow';
+header.style.textAlign = "center";
+header.innerHTML = "Ini header";
 
 let currentIndex = 0;
 
@@ -35,3 +40,13 @@ function showImage(index) {
 
 // Display the first image when the page loads
 showImage(currentIndex);
+
+const footer = document.createElement("h1");
+footer.textContent = "Ini footer"
+footer.style.backgroundColor = "#FFA500"
+footer.style.textAlign = "center"
+
+const footerdDiv = document.querySelector(".footer")
+footerdDiv.append(footer)
+
+

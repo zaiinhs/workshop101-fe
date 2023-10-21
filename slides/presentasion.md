@@ -149,19 +149,23 @@ Oleh karena itu, sebenarnya DOM sangat sederhana, namun penggunaannya sangat ber
 Document merupakan representasi object dari halaman web
 Dalam satu halaman web, terdapat satu document, dan kita tidak perlu membuatnya secara manual, karena otomatis akan ada di browser
 Untuk mengakses Document, kita bisa gunakan object document
+
 https://developer.mozilla.org/en-US/docs/Web/API/Document
+
 </li>
 </ul>
 
 ---
 
-### document property
+### Document Property
 
 <ul  class="list-dom">
 <li>
 Document memiliki banyak sekali property
 Property dalam Document bisa kita gunakan untuk melihat semua data yang terdapat dalam document halaman web
+
 https://developer.mozilla.org/en-US/docs/Web/API/Document#properties
+
 </li>
 </ul>
 
@@ -173,7 +177,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document#properties
 <li>
 Document memiliki banyak sekali method
 Banyak method yang terdapat di document digunakan untuk memanipulasi data DOM, misal membuat Node, Element, Attribute atau mengambil dan menyeleksi Node di dalam document
+
 https://developer.mozilla.org/en-US/docs/Web/API/Document#methods
+
 </li>
 </ul>
 
@@ -190,7 +196,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document#methods
 Node adalah base class dari Document, Element dan Attr
 Artinya semua fitur yang dimiliki di Node dimiliki diturunannya
 Node dalam DOM itu bentuknya adalah Tree (pohon), artinya dengan Node, kita bisa melihat Parent (node diatas nya), Children (node dibawahnya), Sibling (node disebelahnya)
+
 https://developer.mozilla.org/en-US/docs/Web/API/Node
+
 </li>
 </ul>
 
@@ -202,7 +210,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Node
 <li>
 Node memiliki banyak sekali property
 Property di Node banyak berisi informasi reference ke Node lain nya, seperti ke node parent nya, node children nya atau node sebelahnya
+
 https://developer.mozilla.org/en-US/docs/Web/API/Node#properties
+
 </li>
 </ul>
 
@@ -214,7 +224,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Node#properties
 <li>
 Node memiliki banyak sekali method
 Method di Node bisa digunakan untuk memanipulasi data Node di dalam Node tersebut, misal menambah/menghapus Node children
+
 https://developer.mozilla.org/en-US/docs/Web/API/Node#properties
+
 </li>
 </ul>
 
@@ -240,7 +252,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element
 <li>
 Element memiliki banyak sekali property
 Dan karena Element adalah turunan dari Node, semua property Node pun bisa digunakan di Element
+
 https://developer.mozilla.org/en-US/docs/Web/API/Element#properties
+
 </li>
 </ul>
 
@@ -252,7 +266,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element#properties
 <li>
 Element memiliki banyak sekali method
 Dan karena Element adalah turunan dari Node, semua method Node pun bisa digunakan di Element
+
 https://developer.mozilla.org/en-US/docs/Web/API/Element#methods
+
 </li>
 </ul>
 
@@ -265,7 +281,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element#methods
 Sebelumnya kita hanya mengambil element menggunakan id, artinya kita perlu buat dulu element nya di HTML
 Kita juga bisa membuat object element baru, dan menambahkannya ke halaman web
 Kita bisa menggunakan method createElement(tag) pada Document
+
 https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+
 </li>
 </ul>
 
@@ -277,7 +295,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
 <li>
 NodeList adalah kumpulan dari Node
 Biasanya NodeList digunakan ketika kita menyeleksi banyak Node sekaligus, misal ketika kita ingin mengambil semua children di Node misalnya
+
 https://developer.mozilla.org/en-US/docs/Web/API/NodeList
+
 </li>
 </ul>
 
@@ -302,7 +322,9 @@ Saat kita menggunakan document.querySelectorAll(), NodeList tersebut bersifat St
 <ul  class="list-dom">
 <li>
 Attr atau attribute merupakan representasi dari attribute sebuah element, atau singkatnya key-value, key nya adalah nama attribute, dan value nya adalah value attribute
+
 https://developer.mozilla.org/en-US/docs/Web/API/Attr
+
 </li>
 </ul>
 
@@ -335,8 +357,10 @@ Atau kita juga bisa langsung membuat Attr langsung dengan name dan value nya men
 Node memiliki kemampuan bereaksi terhadap suatu kejadian, misal kejadian di klik, mouse di atas node tersebut, dan lain-lain
 Ada banyak sekali jenis kejadian yang bisa kita buatkan aksinya ketika kejadian tersebut terjadi, atau dikenal dengan nama Event Handler
 Ada dua cara kita menambahkan Event Handler ke Node, menggunakan Event Target atau Global Event Handler
+
 https://developer.mozilla.org/en-US/docs/Web/API/EventTarget
 https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers
+
 </li>
 </ul>
 
@@ -348,7 +372,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers
 <li>
 Event Target merupakan parent class dari Node, artinya semua Node memiliki kemampuan dari Event Target
 Pada Event Target, kita bisa menggunakan method addEventListener(type, callback) untuk menambahkan Event Handler
+
 https://developer.mozilla.org/en-US/docs/Web/API/EventTarget
+
 </li>
 </ul>
 
@@ -360,7 +386,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/EventTarget
 <li>
 Selain menggunakan Event Target, untuk menambahkan Event Handler, kita juga bisa menggunakan Global Event Handler
 Global Event Handler bukanlah sebuah super class, hanya kontrak yang bisa kita gunakan untuk menambah event handler sesuai dengan type event nya
+
 https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers
+
 </li>
 </ul>
 
@@ -373,7 +401,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers
 DOM sendiri memiliki banyak sekali jenis event, tidak hanya click
 Jenis event yang bisa kita gunakan biasanya disesuaikan dengan target event nya, misal pada element video, ada event play, pause, sedangkan pada element button, tidak ada event play atau pause
 Untuk lebih detailnya, ada apa saja jenis event nya, kita bisa lihat pada halaman berikut :
+
 https://developer.mozilla.org/en-US/docs/Web/Events
+
 </li>
 </ul>
 
@@ -422,7 +452,9 @@ Window merupakan representasi window yang berisikan DOM Document
 Beberapa JavaScript function sebenarnya berasal dari object Window, seperti alert(), confirm() dan prompt()
 Ada banyak sekali property, method dan event yang bisa kita gunakan pada window
 Untuk menggunakan Window, kita tidak perlu membuat objectnya, cukup gunakan kata kunci window
+
 https://developer.mozilla.org/en-US/docs/Web/API/Window
+
 </li>
 </ul>
 
@@ -434,7 +466,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Window
 <li>
 Universal Selector merupakan selector untuk menyeleksi semua element
 Kita bisa menggunakan karakter \*
+
 https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+
 </li>
 </ul>
 
@@ -446,7 +480,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
 <li>
 Type Selector adalah selector yang digunakan untuk menyeleksi tag type HTML yang kita pilih
 Untuk menggunakannya, kita bisa langsung sebutkan nama tag nya
+
 https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors
+
 </li>
 </ul>
 
@@ -458,7 +494,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors
 <li>
 Class Selector merupakan selector untuk menyeleksi semua element yang memiliki class yang sesuai selector
 Untuk menggunakannya, kita bisa sebutkan nama class nya diawali dengan titik
+
 https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors
+
 </li>
 </ul>
 
@@ -481,38 +519,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors
 ### Dan selector lain nya.
 
 <p  class="list-dom">
+
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+
 </p>
-
----
-
-# ini slide
-
-```javascript
-nextButton.addEventListener("click", () => {
-  showImage(currentIndex + 1);
-});
-```
-
----
-
-# slide table
-
-| Header | Header | Haader |
-| ------ | ------ | ------ |
-| Text   | Text   | Text   |
-
----
-
-# Gifs
-
----
-
-<!-- _class: invert -->
-
-# Lets go
-
-![alt](https://media2.giphy.com/media/8vkEKXvnXkyCZx8w6b/giphy.gif?cid=ecf05e475fj2z3dbglu3d1iacia4q55b2dx3c1j68dpoxunf&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
 ---
 
@@ -521,6 +531,14 @@ nextButton.addEventListener("click", () => {
 <!-- ![bg left height:4in] - set gambar di samping -->
 
 ![](https://media4.giphy.com/media/dcScHZPUskMOJwyqjj/giphy.gif?cid=ecf05e473zimvfd1hp2pyxm436ksy5e64du7t0hjwc6zvqcb&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
+---
+
+<!-- _class: invert -->
+
+# Lets go
+
+![alt](https://media2.giphy.com/media/8vkEKXvnXkyCZx8w6b/giphy.gif?cid=ecf05e475fj2z3dbglu3d1iacia4q55b2dx3c1j68dpoxunf&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
 ---
 
