@@ -76,9 +76,13 @@ Currently just starting my journey at startup <a href="https://delman.io/" targe
 
 ---
 
-# Pengenalan DOM
+# Document Object Model
+
+![](../assets/document.png)
 
 ---
+
+### Pengenalan DOM
 
 <ul class="list-dom">
 <li>
