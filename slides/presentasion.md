@@ -344,9 +344,15 @@ Atau kita juga bisa langsung membuat Attr langsung dengan name dan value nya men
 
 # Manipulation
 
+dari yang sudah dipelajari ini, mari kita praktek an dengan memanipulasi elemen nya dengan menambahkan styling, setAtribut, dan juga menambahkan element baru.
+
 ---
 
 # traversal
+
+Penelusuran DOM
+
+[Blog Medium](https://medium.com/codex/how-to-traverse-the-dom-in-javascript-7fece4a7751c)
 
 ---
 
